@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/enterButton"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="24dp"
+        android:backgroundTint="#0091EA"
+        android:text="@string/enter"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:cropToPadding="false"
+            app:srcCompat="@drawable/logo" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="10sp"
+        app:contentPadding="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/enterButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/team1_editText"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:autofillHints=""
+                android:background="@drawable/shape_2"
+                android:ems="10"
+                android:hint="@string/default_team_1"
+                android:inputType="text"
+                android:paddingLeft="20sp"
+                android:paddingRight="10sp"
+                android:textColor="@color/black"
+                android:textColorHint="#858383"
+                app:layout_constraintBottom_toBottomOf="@+id/labelTeam1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/labelTeam1"
+                app:layout_constraintTop_toTopOf="@+id/labelTeam1" />
+
+            <TextView
+                android:id="@+id/labelTeam1"
+                android:layout_width="60sp"
+                android:layout_height="48sp"
+                android:layout_marginTop="16dp"
+                android:gravity="center|start"
+                android:text="@string/team_1"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/labelTeamNames" />
+
+            <TextView
+                android:id="@+id/labelTeamNames"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/enter_team_names_and_overs"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/labelTeam2"
+                android:layout_width="60sp"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center|start"
+                android:text="@string/team_2"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/labelTeam1"
+                app:layout_constraintTop_toBottomOf="@+id/labelTeam1" />
+
+            <EditText
+                android:id="@+id/team2_editText"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:autofillHints=""
+                android:background="@drawable/shape_3"
+                android:ems="10"
+                android:hint="@string/default_team_2"
+                android:inputType="text"
+                android:paddingLeft="20sp"
+                android:paddingRight="10sp"
+                android:textColor="@color/black"
+                android:textColorHint="#858383"
+                app:layout_constraintBottom_toBottomOf="@+id/labelTeam2"
+                app:layout_constraintEnd_toEndOf="@+id/team1_editText"
+                app:layout_constraintStart_toEndOf="@+id/labelTeam2"
+                app:layout_constraintTop_toTopOf="@+id/labelTeam2" />
+
+            <TextView
+                android:id="@+id/labelOvers"
+                android:layout_width="60sp"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center|start"
+                android:text="@string/overs"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/labelTeam2"
+                app:layout_constraintTop_toBottomOf="@+id/labelTeam2" />
+
+            <EditText
+                android:id="@+id/overs"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:autofillHints=""
+                android:background="@drawable/shape_4"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/_10"
+                android:inputType="number"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:textColor="@color/black"
+                android:textColorHint="#858383"
+                app:layout_constraintBottom_toBottomOf="@+id/labelOvers"
+                app:layout_constraintEnd_toEndOf="@+id/team2_editText"
+                app:layout_constraintStart_toEndOf="@+id/labelOvers"
+                app:layout_constraintTop_toTopOf="@+id/labelOvers" />
+
+            <TextView
+                android:id="@+id/labelForTarget"
+                android:layout_width="60sp"
+                android:layout_height="48dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center|start"
+                android:text="@string/target_score"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/labelOvers"
+                app:layout_constraintTop_toBottomOf="@+id/labelOvers" />
+
+            <Switch
+                android:id="@+id/switch_TargetScore"
+                android:layout_width="50sp"
+                android:layout_height="0dp"
+                android:layout_marginStart="8dp"
+                app:layout_constraintBottom_toBottomOf="@+id/labelForTarget"
+                app:layout_constraintStart_toEndOf="@+id/labelForTarget"
+                app:layout_constraintTop_toTopOf="@+id/labelForTarget" />
+
+            <EditText
+                android:id="@+id/targetScore"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="8dp"
+                android:autofillHints=""
+                android:background="@drawable/shape_5"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/enter_target_score"
+                android:inputType="phone"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:textColor="@color/black"
+                android:textColorHint="#858383"
+                app:layout_constraintBottom_toBottomOf="@+id/switch_TargetScore"
+                app:layout_constraintEnd_toEndOf="@+id/overs"
+                app:layout_constraintStart_toEndOf="@+id/switch_TargetScore"
+                app:layout_constraintTop_toTopOf="@+id/switch_TargetScore" />
+
+            <TextView
+                android:id="@+id/note"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/round_dark_neon"
+                android:backgroundTint="#1E0288D1"
+                android:padding="10sp"
+                android:text="@string/switch_off_note"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/labelForTarget"
+                app:layout_constraintTop_toBottomOf="@+id/labelForTarget" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

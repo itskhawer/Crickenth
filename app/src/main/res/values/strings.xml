@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Crickenth</string>
+    <string name="overs">Overs*</string>
+    <string name="enter">Enter</string>
+    <string name="team_1">Team 1</string>
+    <string name="team_2">Team 2</string>
+    <string name="enter_team_names_and_overs">Enter team names and Overs</string>
+    <string name="default_team_1">Default : Team 1</string>
+    <string name="default_team_2">Default : Team 2</string>
+    <string name="_10">10</string>
+    <string name="target_score">Target Score</string>
+    <string name="switch_off_note">Note: Team 1 will be batting.</string>
+    <string name="switch_on_note">Note: Team 2 will be batting.</string>
+    <string name="enter_target_score">Enter Target</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="scrollView" />
+    <string name="end_inning">End Inning</string>
+    <string name="ok">OK</string>
+    <string name="out">OUT</string>
+    <string name="retire">Retire</string>
+    <string name="no_ball">No Ball</string>
+    <string name="wide">Wide</string>
+    <string name="_0_0">0.0</string>
+    <string name="_0">0</string>
+    <string name="remaining_overs">0.0</string>
+    <string name="radiobutton0">0</string>
+    <string name="r1">1</string>
+    <string name="r_2">2</string>
+    <string name="r_3">3</string>
+    <string name="r_4">4</string>
+    <string name="r_0">0</string>
+    <string name="overstextview">0.0</string>
+    <string name="r_5">5</string>
+    <string name="r_6">6</string>
+    <string name="scoreedittext">0</string>
+    <string name="out_players">Out Players</string>
+    <string name="remaining_balls">Remaining Balls</string>
+    <string name="crr">CRR</string>
+    <string name="score">Score</string>
+    <string name="textiviewovers">Overs</string>
+    <string name="remaining_overstextview">Remaining Overs</string>
+    <string name="targetscoreEditable">target score editable</string>
+    <string name="end_match">End Match</string>
+
+</resources>
